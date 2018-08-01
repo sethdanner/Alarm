@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="09y-th-E6a" customClass="SwitchTableViewCell" customModule="Alarm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alarmCell" id="09y-th-E6a" customClass="SwitchTableViewCell" customModule="Alarm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09y-th-E6a" id="7cc-0u-iMv">
@@ -65,7 +65,7 @@
                                     <outlet property="alarmSwitch" destination="Te8-bt-0Ro" id="jGU-eb-yGK"/>
                                     <outlet property="nameLabel" destination="eMP-aV-ch9" id="rnC-p7-jwE"/>
                                     <outlet property="timeLabel" destination="3IC-hO-k7O" id="AdH-It-M1L"/>
-                                    <segue destination="aXC-Qp-rON" kind="show" id="roK-y4-zWj"/>
+                                    <segue destination="aXC-Qp-rON" kind="show" identifier="toDetailVC" id="roK-y4-zWj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -226,6 +226,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xip-gI-Gqn"/>
+        <segue reference="roK-y4-zWj"/>
     </inferredMetricsTieBreakers>
 </document>

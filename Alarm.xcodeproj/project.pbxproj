@@ -74,7 +74,7 @@
 		60F1679C2110B9AA00A74860 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
-				60F9E54321122AB4003E8FA4 /* Model */,
+				60F9E54321122AB4003E8FA4 /* Model&ModelController */,
 				603EA0EC21110EE200B64A23 /* ViewControllers */,
 				60F167B02110BA3500A74860 /* Storyboards */,
 				60F167AF2110BA1900A74860 /* Resources */,
@@ -102,13 +102,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		60F9E54321122AB4003E8FA4 /* Model */ = {
+		60F9E54321122AB4003E8FA4 /* Model&ModelController */ = {
 			isa = PBXGroup;
 			children = (
 				60F9E53F211229B4003E8FA4 /* Alarm.swift */,
 				60F9E54421122AC0003E8FA4 /* AlarmController.swift */,
 			);
-			path = Model;
+			path = "Model&ModelController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
