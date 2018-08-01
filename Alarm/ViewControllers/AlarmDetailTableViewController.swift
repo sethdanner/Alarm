@@ -9,30 +9,25 @@
 import UIKit
 
 class AlarmDetailTableViewController: UITableViewController {
-
+    
+    // MARK: Outlets
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var alarmTitle: UITextField!
+    @IBOutlet weak var enableButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    // MARK: Actions
+    @IBAction func enableButtonTapped(_ sender: UIButton) {
+        
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        
     }
- 
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
+    
 }
